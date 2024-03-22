@@ -1,0 +1,6 @@
+github.com/aquilax/truncate v1.0.0 h1:UgIGS8U/aZ4JyOJ2h3xcF5cSQ06+gGBnjxH2RUHJe0U=
+github.com/aquilax/truncate v1.0.0/go.mod h1:BeMESIDMlvlS3bmg4BVvBbbZUNwWtS8uzYPAKXwwhLw=
+github.com/tushar2708/altcsv v0.0.0-20230512192735-3e4f3291a680 h1:sA7N8WLjR7NPwm8mpG8gUj52mAJKr07vy9qS58E/PEE=
+github.com/tushar2708/altcsv v0.0.0-20230512192735-3e4f3291a680/go.mod h1:V0EQRbXxfDgzg5nmAixejpBOgZd8ZURPLuJlL8jrT5U=
+github.com/yobert/alsa v0.0.0-20230126204319-85bb7ee02e5b h1:NPudjRQh/wQj0pXiT7uoQlvm1M4VsbMXe4kY+oalV40=
+github.com/yobert/alsa v0.0.0-20230126204319-85bb7ee02e5b/go.mod h1:CaowXBWOiSGWEpBBV8LoVnQTVPV4ycyviC9IBLj8dRw=

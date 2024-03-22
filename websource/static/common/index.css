@@ -1,0 +1,236 @@
+/* Definitions */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600&family=Righteous&family=Roboto+Slab:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: scale(0%);
+    }
+    1% {
+        opacity: 0;
+        transform: scale(75%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+/* @keyframes closePopup {
+    0% {
+        opacity: 1;
+        transform: scale(100%);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(75%);
+    }
+    100% {
+        opacity: 0;
+    }
+} */
+
+:root {
+    --nb-height: 55px;
+}
+
+div, a {
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gabarito' !important;
+    color: white;
+}
+
+p, span {
+    font-family: 'Roboto'!important;
+    color: white;
+}
+
+body, html {
+    overflow-x: hidden;
+    width: 100vw;
+    scroll-behavior: smooth;
+    background-color: #2c2c2c;
+}
+
+#navbar {
+    background-color: rgb(49, 49, 49);
+    height: var(--nb-height);
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    box-shadow: 1px 10px 35px 2px rgba(0,0,0,0.55);
+}
+
+.nav_left {
+    height: var(--nb-height);
+    width: calc(100vw / 3);
+    display: flex;
+}
+
+.nav_center {
+    height: var(--nb-height);
+    width: calc(100vw / 3);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_right {
+    height: var(--nb-height);
+    width: calc(100vw / 3);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav_bump {
+    height: var(--nb-height)
+}
+
+.nb_item {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gabarito';
+    height: var(--nb-height);
+    font-size: 20px;
+    line-height: calc(var(--nb-height) - 5px)
+}
+
+img.nb_img {
+    height: calc(var(--nb-height) - 20px);
+    padding: 10px;
+    transition: margin-right 0.25s ease-out;
+}
+
+div.nb_img {
+    display: flex;
+}
+
+.nb_img::after {
+    content: "Home Inventory";
+    font-family: 'Righteous';
+    color: rgba(255, 255, 255, 0);
+    height: var(--nb-height);
+    font-size: 30px;
+    line-height: calc(var(--nb-height) - 5px);
+    transition: all 0.2s ease-out;
+    margin-left: -20px;
+    text-wrap: none;
+    white-space: nowrap;
+}
+
+div.nb_img:hover::after {
+    color: white;
+    margin-left: 0px;
+}
+
+#brand {
+    width: 55px;
+    background-color: rgb(34, 34, 34);
+    height: var(--nb-height);
+    transition: width 0.3s ease-out;
+}
+
+.brandClip {
+    clip-path: polygon(0 100%, 0 0, 20px 0, 0 100%, 10px 100%, 30px 0, 40px 0, 20px 100%, 30px 100%, 50px 0, 60px 0, 40px 100%);
+    background-color: rgb(34, 34, 34);
+    height: var(--nb-height);
+    width: 60px;
+}
+
+.backup {
+    clip-path: polygon(0 0, 0 100%, 80px 100%, 95px 0, 105px 0, 90px 100%, 100px 100%, 115px 0, 125px 0, 110px 100%, 120px 100%, 135px 0);
+}
+
+#brand:hover, #brand.railOpen {
+    width: 275px
+}
+
+  .nb_item {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.nb_item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    top: 4px;
+    background-color: white;
+    transition: all ease-in-out .2s;
+    border-radius: 3px;
+}
+
+.nb_item:hover::after {
+    width: 100%;
+    left: 0;
+    height: 5px;
+    top: 6px;
+}
+
+#cw {
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.dgOpen {
+    animation: popup forwards 0.5s ease;
+}
+
+.searchbar {
+    width: 100%;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin-top: 50px !important;
+}
+
+.locationBox {
+    height: 300px;
+    width: 400px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    transition: all 0.25s ease;
+}
+
+.containerBox {
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    transition: all 0.25s ease;
+}
+
+.label {
+    font-size: 20pt;
+    text-decoration: none !important;
+}
+
+.subLabel {
+    color:#c2c2c2;
+    font-size: small;
+    text-decoration: none !important;
+}
+
+.containerBox:hover, .locationBox:hover {
+    transform: translateY(-15px);
+}
